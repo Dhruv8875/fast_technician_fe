@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { fetchAllRequests } from "../redux/slices/request/technicianRequestSlice";
 import TopBar from "../components/TopBar";
+import MobileNavFooter from "../components/NavigationFooter";
 
 export default function RequestsPage() {
     const dispatch = useDispatch();
@@ -158,7 +159,7 @@ export default function RequestsPage() {
 
                     {/* Request List */}
                     {!loading && !error && requests.length > 0 && (
-                        <div className="space-y-3">
+                        <div className="space-y-3 mb-18">
                             {sortedRequests.map((req, index) => (
                                 <div
                                     key={req._id || index}
@@ -278,6 +279,7 @@ export default function RequestsPage() {
                             ))}
                         </div>
                     )}
+                    <MobileNavFooter/>
                 </div>
             </div>
         </>
