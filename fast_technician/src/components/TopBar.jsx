@@ -91,10 +91,10 @@ export default function TopBar() {
               🔧 New request for AC Repair - Sector 45
             </div>
             <div className="p-2 hover:bg-purple-50/80 cursor-pointer transition-colors">
-              ✅ Your job for Washing Machine is Accepted
+               Your job for Washing Machine is Accepted
             </div>
             <div className="p-2 hover:bg-purple-50/80 cursor-pointer transition-colors">
-              ❌ Request for Fridge Repair was Rejected
+              Request for Fridge Repair was Rejected
             </div>
           </div>
         </motion.div>
